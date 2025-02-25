@@ -26,10 +26,12 @@ async def capture_emotion(websocket):
         # Detect faces in the frame
         faces, scores = face_cascade.detectMultiScale2(gray_frame, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
+        # Continue if no faces found
+        if len(faces) < 0: continue
+
         # Get best face
-        if len(faces) > 0:
-            best_idx = scores.argmax()  # Index of the most confident face
-            best_face = faces[best_idx]
+        best_idx = scores.argmax()  # Index of the most confident face
+        best_face = faces[best_idx]
 
         (x, y, w, h) = best_face
 
@@ -47,7 +49,7 @@ async def capture_emotion(websocket):
         emotion = result[0]['dominant_emotion']
 
         # Send the dominant emotion
-        await websocket.send(emotion)
+        if (websocket != None): await websocket.send(emotion)
 
         # Draw rectangle around face and label with predicted emotion
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
@@ -65,8 +67,9 @@ async def capture_emotion(websocket):
     cv2.destroyAllWindows()
 
 async def main():
-    async with websockets.connect(WS_SERVER) as websocket:
-        await capture_emotion(websocket)
+    # async with websockets.connect(WS_SERVER) as websocket:
+    #     await capture_emotion(websocket)
+    await capture_emotion(None)
 
 if __name__ == "__main__":
     asyncio.run(main())
