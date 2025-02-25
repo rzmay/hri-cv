@@ -1,0 +1,10 @@
+{
+  "deno.path": "/usr/local/bin/deno",
+  "deno.enable": true,               // Enables Deno for the workspace
+  "deno.lint": true,                 // Enables Deno linting
+  "deno.unstable": true,             // Allows unstable APIs if your code needs it
+  "editor.defaultFormatter": "denoland.vscode-deno",  // Sets Deno as the default formatter
+  "deno.suggest.imports.hosts": {    // Automatically import from std and deno.land/x modules
+    "https://deno.land": true
+  }
+}
