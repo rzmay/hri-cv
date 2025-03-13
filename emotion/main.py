@@ -67,9 +67,8 @@ async def capture_emotion(websocket):
     cv2.destroyAllWindows()
 
 async def main():
-    # async with websockets.connect(WS_SERVER) as websocket:
-    #     await capture_emotion(websocket)
-    await capture_emotion(None)
+    async with websockets.connect(WS_SERVER) as websocket:
+        await capture_emotion(websocket)
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -22,6 +22,7 @@ export function startEmotionServer(handleEmotion: (emotion: string) => void) {
 
     // Handle incoming messages (emotions)
     socket.onmessage = (event) => {
+      console.log(`Socket event, emotion: ${event.data}`);
       const emotion = event.data;
       handleEmotion(emotion); // Pass emotion to the provided handler
     };

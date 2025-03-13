@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read --allow-write --allow-env index.ts"
+  },
+  "imports": {
+    // Link to the main module of the SDK
+    "openai": "https://deno.land/x/openai@v4.69.0/mod.ts",
+
+    // Optionally add a shorthand for the module root, so you can import
+    // other TypeScript source files from the SDK when convenient
+    "openai/": "https://deno.land/x/openai@v4.69.0/"
+  }
+}
