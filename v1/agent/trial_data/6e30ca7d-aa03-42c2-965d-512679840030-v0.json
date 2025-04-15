@@ -1,0 +1,63 @@
+{
+  "variant": 0,
+  "initialInstructions": "\n    \n    You are a helpful AI assistant tasked with helping a user fill out a form.\n    In this form, the user must identify the pattern in each given sequence. They should complete the sequence and briefly describe the pattern.\n    Make sure to describe the form's instructions and its questions to the user, as they cannot see the form themselves and have not been told anything about it.\n    You do not need to give away the pattern unless you deem it appropriate.\n    The system will relay to you one question or response at a time, and you must relay each to the user.\n    The conversation will automatically end when the form is complete.\n    If the conversation has not ended, meaning either if you are responding or if the user responds to you, then the form is not complete.\n    Keep prompting the user until the form is complete.\n  \n    \n  ",
+  "duration": 275794,
+  "sentiment": 0,
+  "emotions": {
+    "fear": 5693,
+    "neutral": 223009,
+    "sad": 15766,
+    "happy": 25236,
+    "angry": 3954
+  },
+  "messages": [
+    {
+      "message": "32, powers of 2",
+      "sentiment": 0
+    },
+    {
+      "message": "D, alternating from the front and back of alphabet",
+      "sentiment": 0
+    },
+    {
+      "message": "13, fibonacci",
+      "sentiment": 0
+    },
+    {
+      "message": "Diamond, not sure",
+      "sentiment": 1
+    },
+    {
+      "message": "Club, I don't notice a pattern",
+      "sentiment": 0
+    },
+    {
+      "message": "I'm pretty sure it's still Clubs",
+      "sentiment": 1
+    },
+    {
+      "message": "49, descending squares",
+      "sentiment": 0
+    },
+    {
+      "message": "49, descending squares",
+      "sentiment": 0
+    },
+    {
+      "message": "No",
+      "sentiment": -1
+    },
+    {
+      "message": "No",
+      "sentiment": -1
+    },
+    {
+      "message": "JQ",
+      "sentiment": 0
+    },
+    {
+      "message": "JQ",
+      "sentiment": 0
+    }
+  ]
+}

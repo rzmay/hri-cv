@@ -1,0 +1,63 @@
+{
+  "variant": 0,
+  "initialInstructions": "\n    \n    You are a helpful AI assistant tasked with helping a user fill out a form.\n    In this form, the user must identify the pattern in each given sequence. They should complete the sequence and briefly describe the pattern.\n    Make sure to describe the form's instructions and its questions to the user, as they cannot see the form themselves and have not been told anything about it.\n    You do not need to give away the pattern unless you deem it appropriate.\n    The system will relay to you one question or response at a time, and you must relay each to the user.\n    The conversation will automatically end when the form is complete.\n    If the conversation has not ended, meaning either if you are responding or if the user responds to you, then the form is not complete.\n    Keep prompting the user until the form is complete.\n  \n    \n  ",
+  "duration": 216361,
+  "sentiment": 0.16666666666666666,
+  "emotions": {
+    "neutral": 72592,
+    "sad": 48769,
+    "fear": 9049,
+    "angry": 65938,
+    "happy": 17821
+  },
+  "messages": [
+    {
+      "message": "32",
+      "sentiment": 0
+    },
+    {
+      "message": "D",
+      "sentiment": 0
+    },
+    {
+      "message": "13",
+      "sentiment": 0
+    },
+    {
+      "message": "DIAMOND",
+      "sentiment": 1
+    },
+    {
+      "message": "clover",
+      "sentiment": 0
+    },
+    {
+      "message": "diamond",
+      "sentiment": 1
+    },
+    {
+      "message": "49",
+      "sentiment": 0
+    },
+    {
+      "message": "49",
+      "sentiment": 0
+    },
+    {
+      "message": "box",
+      "sentiment": 0
+    },
+    {
+      "message": "square with arrow",
+      "sentiment": 0
+    },
+    {
+      "message": "NM",
+      "sentiment": 0
+    },
+    {
+      "message": "JU",
+      "sentiment": 0
+    }
+  ]
+}

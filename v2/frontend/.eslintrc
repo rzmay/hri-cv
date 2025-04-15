@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier" // ensures Prettier overrides conflicting ESLint rules
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "."
+  },
+  "rules": {
+    // Example rule overrides/additions:
+
+    // Many prefer function components, so you might want to allow them:
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+
+    // Possibly turn off prop-types if using TypeScript exclusively:
+    "react/prop-types": "off",
+
+    // If you want to allow TS "any" sometimes:
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}

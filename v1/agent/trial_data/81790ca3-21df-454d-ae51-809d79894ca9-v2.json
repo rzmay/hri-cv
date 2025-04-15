@@ -1,0 +1,63 @@
+{
+  "variant": 2,
+  "initialInstructions": "\n    \n    You are a helpful AI assistant tasked with helping a user fill out a form.\n    In this form, the user must identify the pattern in each given sequence. They should complete the sequence and briefly describe the pattern.\n    Make sure to describe the form's instructions and its questions to the user, as they cannot see the form themselves and have not been told anything about it.\n    You do not need to give away the pattern unless you deem it appropriate.\n    The system will relay to you one question or response at a time, and you must relay each to the user.\n    The conversation will automatically end when the form is complete.\n    If the conversation has not ended, meaning either if you are responding or if the user responds to you, then the form is not complete.\n    Keep prompting the user until the form is complete.\n  \n    \n      You will be given the user's current emotion as detected from video feed in order to augment your presentation of the form.\n      Replicate the user's emotion in your responses, as emotional mimicry may help the user feel more comfortable.\n      Do not directly inform the user that you are mimicking their emotions.\n    \n  ",
+  "duration": 784930,
+  "sentiment": 0.16666666666666666,
+  "emotions": {
+    "neutral": 391149,
+    "fear": 35736,
+    "sad": 193241,
+    "happy": 125081,
+    "angry": 37807
+  },
+  "messages": [
+    {
+      "message": "The next number is 32, as all numbers in the sequence are 2 to the power of their index. BThe fifth number is missing, which means it must be 2 to the power of 5 which is 32",
+      "sentiment": -2
+    },
+    {
+      "message": "The next letter is D, as we're alternating back and forth from the end to the beginning of the alphabet. The  begining going the right way, and the end in reverse",
+      "sentiment": 0
+    },
+    {
+      "message": "13. This is the fibonaccit sequence, where each new number is the sum of the previous two numbers",
+      "sentiment": 0
+    },
+    {
+      "message": "I believe the next symbol to be a diamond, as the frequency of diamonds is increasing after every instance of string of squares, and likewise the number of squares increase after each string of diamonds",
+      "sentiment": 2
+    },
+    {
+      "message": "The next string of symbols would be 6 clubs in a row, so the next symbol should be a club. Each change in suit corresponds to an increase in the number of that symbol, so 1 spade, 2 diamonds, 3 clubs, 3 hearts, 4 spades, and 5 diamonds",
+      "sentiment": 1
+    },
+    {
+      "message": "Another diamond",
+      "sentiment": 1
+    },
+    {
+      "message": "These are all squares of numbers decreasing from 12. The next number is 49",
+      "sentiment": 0
+    },
+    {
+      "message": "49",
+      "sentiment": 0
+    },
+    {
+      "message": "I think it will be the third shape, the circle with the smaller circle next to it. I'm not sure of the pattern",
+      "sentiment": 0
+    },
+    {
+      "message": "Is it the square with the right diagonal",
+      "sentiment": 0
+    },
+    {
+      "message": "JQ. The first letter is the alphabet going down starting from the beginning, and the second letter is the alphabet going up starting from the end",
+      "sentiment": 0
+    },
+    {
+      "message": "JQ",
+      "sentiment": 0
+    }
+  ]
+}
