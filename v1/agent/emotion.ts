@@ -15,7 +15,10 @@ export function startEmotionServer(handleEmotion: (emotion: string, confidence: 
       }
 
       // Upgrade HTTP to WebSocket connection
-      const { socket, response } = Deno.upgradeWebSocket(req);
+      const { socket, response } = Deno.upgradeWebSocket(req, {
+        idleTimeout: 0, // Disable automatic ping/pong timeout
+      });
+
       console.log("Emotion client connected");
 
       // Resolve the promise once we've received a connection!
